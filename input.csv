@@ -1,0 +1,6 @@
+GroupID,Query,TargetDomain
+1,"group one, query one","example.com"
+1,"group one, query two","example.com"
+1,"group one, query three","example.com"
+2,"group two, query one","example.com"
+2,"group two, query two","example.com"
