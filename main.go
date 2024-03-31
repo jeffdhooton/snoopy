@@ -31,7 +31,7 @@ func main() {
 		url = *urlFlag
 	}
 
-	if *queryFlag != "" {
+	if *queryFlag != "" && url != "" {
 		checkRank(*queryFlag, url, "SingleQuery")
 	} else if *csvFlag != "" {
 		groups, err := readCSV(*csvFlag)
@@ -46,7 +46,7 @@ func main() {
 			}
 		}
 	} else {
-		log.Fatal("Please provide a query or a CSV file")
+		log.Fatal("Please provide a query and url OR a CSV file")
 		return
 	}
 }
