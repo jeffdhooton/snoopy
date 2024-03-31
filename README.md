@@ -1,4 +1,4 @@
-# Rank Tracking
+# Snoopy - SEO First Page Rank Checking
 
 CLI tool that takes in either a query & url or a csv and determines whether or not you have a first page ranking for it.
 
