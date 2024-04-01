@@ -121,12 +121,12 @@ func checkRank(query string, targetLink string, groupID string) {
 	found := false
 	for index, link := range links {
 		if strings.Contains(link, targetLink) {
-			fmt.Printf("Group %s: RANK FOUND for \"%s\" (index %d / not perfect rank tracking)\n", groupID, query, index)
+			fmt.Printf("\"%s\": first page rank FOUND for query \"%s\" (link index %d)\n", groupID, query, index)
 			found = true
 		}
 	}
 
 	if !found {
-		fmt.Printf("Group %s: NO RANK FOUND for \"%s\"\n", groupID, query)
+		fmt.Printf("Group %s: first page rank NOT FOUND for query \"%s\"\n", groupID, query)
 	}
 }
